@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent" tools:context=".view.Auth">
+    <TextView
+            android:id="@+id/loginscrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Se Connecté"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center" android:layout_marginBottom="50dp"/>
+
+
+    <TextView
+            android:id="@+id/NumTlef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Num Telf"
+            android:layout_marginLeft="100dp" />
+    <EditText
+            android:id="@+id/txtTelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:ems="10" />
+    <TextView
+            android:id="@+id/adr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse"
+            android:layout_marginLeft="100dp" />
+    <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginLeft="100dp"
+            android:ems="10" />
+    <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Connecte" />
+
+
+
+</LinearLayout>

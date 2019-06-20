@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigationHost"
+            app:startDestination="@id/splashScreen">
+
+    <fragment android:id="@+id/firstinterface" android:name="com.example.myapplication.view.firstinterface"
+              android:label="fragment_firstinterface" tools:layout="@layout/fragment_firstinterface"/>
+    <fragment android:id="@+id/login" android:name="com.example.myapplication.view.Login" android:label="fragment_login"
+              tools:layout="@layout/fragment_login"/>
+    <fragment android:id="@+id/listVilleFragment" android:name="com.example.myapplication.view.ListVilleFragment"
+              tools:layout="@layout/fragment_pharmacie_list">
+        <action android:id="@+id/action_listVilleFragment_to_listepharmacie" app:destination="@id/listepharmacie"/>
+    </fragment>
+   <!-- <fragment android:id="@+id/mapsActivity" android:name="com.example.myapplication.view.garde" android:label="fragment_garde"
+              tools:layout="@layout/fragment_garde"/>-->
+    <fragment android:id="@+id/propo" android:name="com.example.myapplication.view.propo" android:label="fragment_propo"
+              tools:layout="@layout/fragment_propo"/>
+    <fragment android:id="@+id/listepharmacie" android:name="com.example.myapplication.view.Listepharmacie"
+              tools:layout="@layout/fragment_pharmacie_list">
+        <argument android:name="lat" app:argType="integer"/>
+        <action android:id="@+id/action_listepharmacie_to_mapLien2" app:destination="@+id/mapLien2"/>
+    </fragment>
+    <activity android:id="@+id/mapsActivity" android:name="com.example.myapplication.view.MapsActivity"
+              android:label="activity_maps" tools:layout="@layout/activity_maps"/>
+    <fragment android:id="@+id/mapLien2" android:name="com.example.myapplication.view.MapLien"
+              android:label="fragment_map_lien" tools:layout="@layout/fragment_map_lien"/>
+    <fragment android:id="@+id/auth" android:name="com.example.myapplication.view.Auth" android:label="fragment_auth"
+              tools:layout="@layout/fragment_auth"/>
+    <fragment android:id="@+id/splashScreen" android:name="com.example.myapplication.view.SplashScreen"
+              tools:layout="@layout/fragment_splash_screen">
+        <action android:id="@+id/action_splashScreen_to_listVilleFragment" app:destination="@id/listVilleFragment"/>
+    </fragment>
+</navigation>

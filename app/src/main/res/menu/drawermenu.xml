@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/garde" android:id="@+id/mapsActivity"/>
+    <item android:title="@string/apropos" android:id="@+id/propo"/>
+</menu>

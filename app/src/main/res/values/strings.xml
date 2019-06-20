@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SILA PHARMA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="wilaya">Wilaya de :</string>
+    <string name="numWilaya">NumWilaya</string>
+    <string name="login">Login</string>
+    <string name="apropos">A propos</string>
+    <string name="garde">Pharmacie garde plus proche</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="wilayaChoise">Choisir Votre wilaya</string>
+    <string name="title_activity_map_lien">Map</string>
+    <string name="wilayaName">Wilaya</string>
+
+    <string-array name="Wilaya">
+            <item>Annaba</item>
+            <item>el taref</item>
+        </string-array>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent" tools:context=".view.Login">
+<TextView
+        android:id="@+id/loginscrn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Créer UN Compte"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+<TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Nom"/>
+
+<EditText
+        android:id="@+id/txtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:ems="10"/>
+ <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Prenom"/>
+    <EditText
+         android:id="@+id/txtPrenom"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="100dp"
+         android:ems="10"/>
+
+<TextView
+        android:id="@+id/nss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NSS"
+        android:layout_marginLeft="100dp" />
+<EditText
+        android:id="@+id/txtNss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:ems="10" />
+<TextView
+        android:id="@+id/NumTlef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num Telp"
+        android:layout_marginLeft="100dp" />
+<EditText
+        android:id="@+id/txtTelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:ems="10" />
+<TextView
+        android:id="@+id/adr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse"
+        android:layout_marginLeft="100dp" />
+    <EditText
+            android:id="@+id/txtadr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:ems="10" />
+<Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Créer" />
+<TextView android:id="@+id/lnkauthentification"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:text="Avez vous déja un compte? Click ici"
+          android:gravity="center"
+          android:textSize="20dp"
+          android:textColor="#3F51B5"
+          android:onClick="test" tools:ignore="OnClick"/>
+</LinearLayout>
